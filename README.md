@@ -21,4 +21,4 @@ if (value in 1 until (listaProdutos[code]?.descricao?.size ?: 0)) {
 Raissa Vicente Dias
   * [GitHub](https://github.com/RaiVD)
   * [Linkedin](https://www.linkedin.com/mwlite/in/raissa-vicente-86a3b2210)
-
+  
