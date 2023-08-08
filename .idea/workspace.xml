@@ -5,23 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e955e6c0-d979-4d3c-ac92-68ca556458e0" name="Changes" comment="Iniciando desafio">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Cart/Compra.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Cart/InputUser.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Cart/MenuBebida.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Cart/MenuLanche.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Cart/OrderManager.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Payment/CashProcessor.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Payment/CreditEndDebitEndMealVoucherCardProcessor.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Payment/PaymentMethod.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Payment/PaymentProcessor.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Product/Drink.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Product/Lanche.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Product/ProductSelect.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Cart/EditarProduto.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Product/Product.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Compra/Carrinho.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Compra/Main.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Produtos/Item.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Produtos/TipoEnum.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Product/TipoEnum.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Cart/Compra.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Cart/Purchase.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Cart/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Cart/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Cart/MenuBebida.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Cart/BuyBeverage.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Cart/MenuLanche.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Cart/BuySnack.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Cart/OrderManager.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Cart/OrderManager.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Payment/PaymentMethod.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Product/Drink.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Product/Drink.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Product/Lanche.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Product/Lanche.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Product/ProductSelect.kt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,8 +28,8 @@
       <list>
         <option value="Kotlin File" />
         <option value="Kotlin Enum" />
-        <option value="Kotlin Interface" />
         <option value="Kotlin Class" />
+        <option value="Kotlin Interface" />
       </list>
     </option>
   </component>
@@ -77,18 +72,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/raissa.carvalho/Desktop/Desafio3/src/main/kotlin/Product",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/raissa.carvalho/Desktop/Desafio3/src/main/kotlin/Product&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\raissa.carvalho\Desktop\Desafio3\src\main\kotlin\Product" />
@@ -108,16 +103,7 @@
       <recent name="Itens" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CarrinhoTest.testComprarProdutoSemMock">
-    <configuration name="CarrinhoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Desafio3" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CarrinhoTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Kotlin.MainKt (1)">
     <configuration name="CarrinhoTest.calcularValorTotalPedido" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Desafio3" />
       <option name="PACKAGE_NAME" value="" />
@@ -148,6 +134,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MainKt (1)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Cart.MainKt" />
+      <module name="Desafio3" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Compra.MainKt" />
       <module name="Desafio3" />
@@ -157,11 +150,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.MainKt (1)" />
         <item itemvalue="JUnit.CarrinhoTest.testComprarProdutoSemMock" />
         <item itemvalue="Kotlin.MainKt" />
         <item itemvalue="JUnit.CarrinhoTest.testComprarProduto" />
         <item itemvalue="JUnit.CarrinhoTest.calcularValorTotalPedido" />
-        <item itemvalue="JUnit.CarrinhoTest" />
       </list>
     </recent_temporary>
   </component>
@@ -302,6 +295,17 @@
     </task>
     <option name="localTasksCounter" value="19" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Iniciando desafio" />

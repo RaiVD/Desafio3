@@ -2,8 +2,10 @@ package Cart
 
 import Product.Lanche
 import Produtos.TipoEnum
+import kotlin.random.Random
 
-class MenuLanche(private val carrinho: OrderManager): Compra {
+class BuySnack(private val carrinho: OrderManager): Purchase {
+
     val inputUser = InputUser()
 
     override fun exibirOpcoes() {
@@ -22,11 +24,11 @@ class MenuLanche(private val carrinho: OrderManager): Compra {
     }
 
     override fun realizarCompra(nome: String, valor: Double, tipoEnum: TipoEnum) {
-        var code = 1
+        var code: Int
         val quantidade = inputUser.lerInteiroDoUsuario("Qual quantidade você deseja:")
         for (i in 0 until quantidade) {
-            code++
-            carrinho.adicionarProduto(Item(code, Lanche(nome,valor,), 1))
+            code = Random.nextInt(1, 100)
+            carrinho.adicionarProduto(Lanche(nome,valor,1,code, tipoEnum))
         }
         println("Produto adicionado ao carrinho!")
     }
