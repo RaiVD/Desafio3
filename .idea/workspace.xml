@@ -5,13 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e955e6c0-d979-4d3c-ac92-68ca556458e0" name="Changes" comment="Iniciando desafio">
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/CarrinhoTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Cart/Compra.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Cart/InputUser.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Cart/MenuBebida.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Cart/MenuLanche.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Cart/OrderManager.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Payment/CashProcessor.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Payment/CreditEndDebitEndMealVoucherCardProcessor.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Payment/PaymentMethod.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Payment/PaymentProcessor.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Product/Drink.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Product/Lanche.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Product/ProductSelect.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Desafio3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Desafio3.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Compra/Carrinho.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Compra/Carrinho.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Compra/Carrinho.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Compra/Main.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Produtos/Item.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Produtos/TipoEnum.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Product/TipoEnum.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +33,7 @@
       <list>
         <option value="Kotlin File" />
         <option value="Kotlin Enum" />
+        <option value="Kotlin Interface" />
         <option value="Kotlin Class" />
       </list>
     </option>
@@ -54,6 +65,9 @@
       </UrlAndAccount>
     </option>
   </component>
+  <component name="KotlinCodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -63,28 +77,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/raissa.carvalho/Desktop/Desafio3&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/raissa.carvalho/Desktop/Desafio3/src/main/kotlin/Product",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\raissa.carvalho\Desktop\Desafio3\src\main\kotlin\Product" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\raissa.carvalho\Desktop\Desafio3\src\main\kotlin\Compra" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="Cart" />
       <recent name="Produtos" />
       <recent name="Compra" />
       <recent name="Itens" />
     </key>
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="Product" />
+      <recent name="" />
       <recent name="Itens" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CarrinhoTest.testComprarProduto">
+  <component name="RunManager" selected="JUnit.CarrinhoTest.testComprarProdutoSemMock">
     <configuration name="CarrinhoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Desafio3" />
       <option name="PACKAGE_NAME" value="" />
@@ -94,11 +118,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CarrinhoTest.testAdicionarProduto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CarrinhoTest.calcularValorTotalPedido" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Desafio3" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="CarrinhoTest" />
-      <option name="METHOD_NAME" value="testAdicionarProduto" />
+      <option name="METHOD_NAME" value="calcularValorTotalPedido" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -114,11 +138,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CarrinhoTest.testRemoverProduto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CarrinhoTest.testComprarProdutoSemMock" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Desafio3" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="CarrinhoTest" />
-      <option name="METHOD_NAME" value="testRemoverProduto" />
+      <option name="METHOD_NAME" value="testComprarProdutoSemMock" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -133,10 +157,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CarrinhoTest.testComprarProduto" />
+        <item itemvalue="JUnit.CarrinhoTest.testComprarProdutoSemMock" />
         <item itemvalue="Kotlin.MainKt" />
-        <item itemvalue="JUnit.CarrinhoTest.testAdicionarProduto" />
-        <item itemvalue="JUnit.CarrinhoTest.testRemoverProduto" />
+        <item itemvalue="JUnit.CarrinhoTest.testComprarProduto" />
+        <item itemvalue="JUnit.CarrinhoTest.calcularValorTotalPedido" />
         <item itemvalue="JUnit.CarrinhoTest" />
       </list>
     </recent_temporary>
@@ -269,7 +293,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689965770185</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Iniciando desafio">
+      <created>1690389194116</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1690389194116</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
