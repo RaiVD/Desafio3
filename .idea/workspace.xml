@@ -5,16 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e955e6c0-d979-4d3c-ac92-68ca556458e0" name="Changes" comment="Iniciando desafio">
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/TestCart/TestOrderManeger.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Cart/BuyBeverage.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Cart/BuyBeverage.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Cart/BuySnack.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Cart/BuySnack.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Cart/EditarProduto.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Cart/EditProduct.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Cart/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Cart/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Cart/OrderManager.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Cart/OrderManager.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Cart/Purchase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Cart/Purchase.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Product/Drink.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Product/Drink.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Product/Lanche.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Product/Lanche.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Product/Product.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Product/Product.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +18,8 @@
       <list>
         <option value="Kotlin File" />
         <option value="Kotlin Enum" />
-        <option value="Kotlin Class" />
         <option value="Kotlin Interface" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -101,17 +93,7 @@
       <recent name="Itens" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.MainKt (1)">
-    <configuration name="CarrinhoTest.calcularValorTotalPedido" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Desafio3" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CarrinhoTest" />
-      <option name="METHOD_NAME" value="calcularValorTotalPedido" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.TestOrderManeger">
     <configuration name="CarrinhoTest.testComprarProduto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Desafio3" />
       <option name="PACKAGE_NAME" value="" />
@@ -132,6 +114,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestOrderManeger" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Desafio3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TestCart.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="TestCart" />
+      <option name="MAIN_CLASS_NAME" value="TestCart.TestOrderManeger" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MainKt (1)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Cart.MainKt" />
       <module name="Desafio3" />
@@ -148,11 +145,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestOrderManeger" />
         <item itemvalue="Kotlin.MainKt (1)" />
         <item itemvalue="JUnit.CarrinhoTest.testComprarProdutoSemMock" />
         <item itemvalue="Kotlin.MainKt" />
         <item itemvalue="JUnit.CarrinhoTest.testComprarProduto" />
-        <item itemvalue="JUnit.CarrinhoTest.calcularValorTotalPedido" />
       </list>
     </recent_temporary>
   </component>
@@ -298,7 +295,14 @@
       <option name="project" value="LOCAL" />
       <updated>1691520543658</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Iniciando desafio">
+      <created>1691521780196</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1691521780196</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
