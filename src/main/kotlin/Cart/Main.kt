@@ -11,17 +11,17 @@ fun main() {
             println("======================== Bem-vindo ao SimCity FastFood ========================")
             println("\t\t\t\t\t=========== Menu ===========")
             println("\t\t\t\t\t\t1. Lanche | 2. Bebida")
-            val opcao = readlnOrNull()?.toIntOrNull() ?: 0
+            val option = readlnOrNull()?.toIntOrNull() ?: 0
 
-            when (opcao) {
+            when (option) {
                 1 -> {
-                    BuySnack(carrinho).exibirOpcoes()
-                    BuyBeverage(carrinho).exibirOpcoes()
-                    carrinho.continuarComprando()
+                    BuySnack(carrinho).displayOptions()
+                    BuyBeverage(carrinho).displayOptions()
+                    carrinho.keepBuying()
                 }
                 2 -> {
-                    BuyBeverage(carrinho).exibirOpcoes()
-                    carrinho.continuarComprando()
+                    BuyBeverage(carrinho).displayOptions()
+                    carrinho.keepBuying()
                 }
                 else -> println("Opção inválida, tente novamente!")
             }

@@ -5,18 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e955e6c0-d979-4d3c-ac92-68ca556458e0" name="Changes" comment="Iniciando desafio">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Cart/EditarProduto.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Product/Product.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Cart/Compra.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Cart/Purchase.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Cart/BuyBeverage.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Cart/BuyBeverage.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Cart/BuySnack.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Cart/BuySnack.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Cart/EditarProduto.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Cart/EditProduct.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Cart/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Cart/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Cart/MenuBebida.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Cart/BuyBeverage.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Cart/MenuLanche.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Cart/BuySnack.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Cart/OrderManager.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Cart/OrderManager.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Payment/PaymentMethod.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Cart/Purchase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Cart/Purchase.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Product/Drink.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Product/Drink.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Product/Lanche.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Product/Lanche.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Product/ProductSelect.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Product/Product.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Product/Product.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,18 +70,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/raissa.carvalho/Desktop/Desafio3/src/main/kotlin/Product&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/raissa.carvalho/Desktop/Desafio3/src/main/kotlin/Product",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "cn.yiiguxing.plugin.translate"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\raissa.carvalho\Desktop\Desafio3\src\main\kotlin\Product" />
@@ -293,7 +291,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690389194116</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Iniciando desafio">
+      <created>1691520543658</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1691520543658</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

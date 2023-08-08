@@ -8,51 +8,51 @@ class OrderManager() {
 
     val listaProdutos = mutableMapOf<Int, Product>()
     val inputUser = InputUser()
-    fun adicionarProduto(item: Product) {
+    fun addProduct(item: Product) {
         listaProdutos[item.code] = item
     }
 
-    fun exibirProdutos() {
+    fun displayProducts() {
         println("======================== Carrinho de Compras ========================")
         if (listaProdutos.isEmpty()) {
             println("O carrinho está vazio.")
         } else {
             for ((codigo, item) in listaProdutos) {
-                println("Código - $codigo | Nome - ${item.nome} | Valor - R$${item.valor}")
+                println("Código - $codigo | Nome - ${item.name} | Valor - R$${item.value}")
             }
         }
         println()
     }
-    fun calcularValorTotalPedido(): Double {
-        return listaProdutos.values.sumByDouble { it.valorTotal() }
+    fun calculateTotalOrderValue(): Double {
+        return listaProdutos.values.sumByDouble { it.amount() }
     }
-    fun continuarComprando() {
+    fun keepBuying() {
         println()
         println("1. Adicionar item  |  2. Editar | 3. remover item | 4. Finalizar")
         val option = inputUser.lerInteiroDoUsuario("Qual opção você deseja:")
         when (option) {
             1 ->{
-                BuySnack(this).exibirOpcoes()
-                BuyBeverage(this).exibirOpcoes()
-                continuarComprando()
+                BuySnack(this).displayOptions()
+                BuyBeverage(this).displayOptions()
+                keepBuying()
             }
             2 -> {
-                EditarProduto(this).editarItem()
-                continuarComprando()
+                EditProduct(this).editItem()
+                keepBuying()
             }
             3 ->{
-                removerProduto()
-                continuarComprando()
+                removeProduct()
+                keepBuying()
             }
-            4 -> finalizarCompra()
+            4 -> checkout()
             else -> {
                 println("Opção inválida, tente novamente!")
-                continuarComprando()
+                keepBuying()
             }
         }
     }
-    fun removerProduto() {
-        exibirProdutos()
+    fun removeProduct() {
+        displayProducts()
         println()
         while (true) {
             val codigo = inputUser.lerInteiroDoUsuario("Digite o código do produto que deseja remover:")
@@ -65,20 +65,20 @@ class OrderManager() {
             }
         }
     }
-    fun finalizarCompra(){
+    fun checkout(){
         if (listaProdutos.isEmpty()) {
             println("O carrinho está vazio. Para finalizar o pedido é necessario adicionar um produto!")
             main()
         }else{
-            exibirProdutos()
-            println("Valor total do pedido: R$${calcularValorTotalPedido()}")
+            displayProducts()
+            println("Valor total do pedido: R$${calculateTotalOrderValue()}")
             println("1. Cartão de crédito | 2. Cartão de débito | 3. Vale refeição | 4. Dinheiro")
             val formaPagamento = inputUser.lerInteiroDoUsuario("Selecione a forma de pagamento:")
             when(formaPagamento){
                 1,2,3 -> println(CreditEndDebitEndMealVoucherCardProcessor().processPayment(0.0,0.0))
                 4 -> {
                     val valueReceivedFromUser = inputUser.lerDecimalDoUsuario("Informe o valor em dinheiro: ")
-                    println(CashProcessor().processPayment(valueReceivedFromUser,calcularValorTotalPedido()))
+                    println(CashProcessor().processPayment(valueReceivedFromUser,calculateTotalOrderValue()))
                 }
             }
         }

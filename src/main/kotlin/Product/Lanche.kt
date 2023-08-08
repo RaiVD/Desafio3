@@ -2,8 +2,8 @@ package Product
 
 import Produtos.TipoEnum
 
-class Lanche(override val nome: String, override val valor: Double, override var quantidade: Int, override val code: Int, override val tipoEnum: TipoEnum): Product {
-    override fun valorTotal(): Double {
-        return (this.valor * this.quantidade)
+class Lanche(override val name: String, override val value: Double, override var quantity: Int, override val code: Int, override val enumType: TipoEnum): Product {
+    override fun amount(): Double {
+        return (this.value * this.quantity)
     }
 }

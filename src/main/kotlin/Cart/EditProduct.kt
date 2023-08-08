@@ -4,51 +4,48 @@ import Product.Lanche
 import Produtos.TipoEnum
 import kotlin.random.Random
 
-class EditarProduto(private val carrinho: OrderManager) {
+class EditProduct(private val carrinho: OrderManager) {
     private val inputUser = InputUser()
 
-    fun editarItem() {
+    fun editItem() {
         if (carrinho.listaProdutos.isEmpty()) {
             println("O carrinho está vazio, adicione um produto para editar.")
-            carrinho.continuarComprando()
+            carrinho.keepBuying()
             return
         }
-
         println("Produtos disponíveis para editar:")
         for ((codigo, item) in carrinho.listaProdutos) {
-            if (item.tipoEnum == TipoEnum.COMIDA) {
-                println("Código - $codigo | Nome - ${item.nome}")
+            if (item.enumType == TipoEnum.COMIDA) {
+                println("Código - $codigo | Nome - ${item.name}")
             }
         }
-
         val code = inputUser.lerInteiroDoUsuario("Digite o código do produto que você deseja editar:")
         if (carrinho.listaProdutos.containsKey(code)) {
-            editarQuantidade(code)
+            editQuantity(code)
         } else {
             println("Nenhum produto com o código $code encontrado, tente novamente!")
-            editarItem()
+            editItem()
         }
     }
 
-    private fun editarQuantidade(code: Int) {
+    private fun editQuantity(code: Int) {
         val item = carrinho.listaProdutos[code] ?: return
-        val novaQuantidade = inputUser.lerInteiroDoUsuario("Digite a nova quantidade de itens para o produto ${item.nome}:")
+        val newQuantity = inputUser.lerInteiroDoUsuario("Digite a nova quantidade de itens para o produto ${item.name}:")
 
-        if (novaQuantidade <= 0) {
+        if (newQuantity <= 0) {
             println("Quantidade inválida. A quantidade deve ser maior que zero.")
-            editarQuantidade(code)
+            editQuantity(code)
             return
         }
         var newcode: Int
-        for (i in 0 until novaQuantidade) {
+        for (i in 0 until newQuantity) {
             newcode = Random.nextInt(1, 100)
-            carrinho.adicionarProduto(Lanche(item.nome,item.valor,1, newcode, item.tipoEnum))
+            carrinho.addProduct(Lanche(item.name,item.value,1, newcode, item.enumType))
         }
-
-        val newValue = carrinho.calcularValorTotalPedido()
+        val newValue = carrinho.calculateTotalOrderValue()
         println("Quantidade atualizada para ${carrinho.listaProdutos.size} itens. Valor total atualizado: R$$newValue")
 
-        carrinho.exibirProdutos()
+        carrinho.displayProducts()
     }
 }
 
